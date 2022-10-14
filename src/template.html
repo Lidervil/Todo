@@ -5,10 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bu</title>
+    <style>
+        div.container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+        }
+
+        header {
+            background-color: red;
+        }
+
+        section.container {
+            background-color: purple;
+        }
+
+        div.div {
+            background-color: green;
+        }
+
+        main {
+            background-color: yellow;
+        }
+
+        .list-item {
+            background-color: orange;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <p>gggg</p>
+        <header class="header">To do list!</header>
+        <section class="container">
+            <navbar class="navbar">
+                <div class="div">
+                    <i></i>
+                    <p>Home</p>
+                </div>
+                <div class="div">
+                    <i></i>
+                    <p>---------------</p>
+                </div>
+                <div class="div">
+                    <i></i>
+                    <p>+ Add a project</p>
+                </div>
+                <div class="div">
+                    <i></i>
+                    <p>Project 1</p>
+                </div>
+            </navbar>
+            <main class="main">
+                <div class="list-item">
+                    <p>Do homework</p>
+                    <button class="delete"></button>
+                </div>
+                <div class="list-item">
+                    <p>Study</p>
+                    <button class="delete"></button>
+                </div>
+                <div class="list-item">
+                    <p>Party</p>
+                    <button class="delete"></button>
+                </div>
+            </main>
+        </section>
     </div>
 </body>
 </html>
